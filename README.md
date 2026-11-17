@@ -50,11 +50,11 @@ The project utilizes the **Indian Liver Patient Dataset (ILPD)**, which contains
 
 ### 2. Feature Scaling
 
-- Z-score normalization of numerical features to ensure consistent model performance. 【1-0e577e】
+- Z-score normalization of numerical features to ensure consistent model performance. 
 
 ### 3. Class Imbalance Handling
 
-- Random oversampling applied to balance the dataset and improve minority-class prediction performance. 【1-0e577e】
+- Random oversampling applied to balance the dataset and improve minority-class prediction performance. 
 
 ### 4. Model Training
 
@@ -79,7 +79,7 @@ Models were assessed using:
 - ROC-AUC Score
 - Confusion Matrix
 
-Special emphasis was placed on **Recall** and **ROC-AUC** because accurately identifying patients with liver disease is critical in healthcare applications. 【1-0e577e】
+Special emphasis was placed on **Recall** and **ROC-AUC** because accurately identifying patients with liver disease is critical in healthcare applications. 
 
 ---
 
