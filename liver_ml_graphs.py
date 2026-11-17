@@ -29,9 +29,8 @@ columns = [
     'Albumin', 'Albumin_and_Globulin_Ratio', 'Target'
 ]
 
-df = pd.read_csv(
-    r'C:\Users\KSHITIJ\Downloads\ilpd+indian+liver+patient+dataset\Indian Liver Patient Dataset (ILPD).csv', 
-    names=columns)
+import pandas as pd
+df = pd.read_csv('Indian Liver Patient Dataset (ILPD).csv')
 
 # Target mapping: 1 -> Patient (Positive class), 2 -> Healthy (Negative class)
 df['Target_Label'] = df['Target'].map({1: 'Liver Disease (1)', 2: 'Healthy (2)'})
