@@ -2,7 +2,7 @@
 
 ## 📖 Overview
 
-This project presents a comparative machine learning study for the early detection of liver disease using the Indian Liver Patient Dataset (ILPD). The objective is to evaluate multiple classification algorithms and identify the most effective model for supporting clinical screening through routine blood test results. The project implements a complete machine learning pipeline, including data preprocessing, feature scaling, class imbalance handling, model training, and performance evaluation. 【1-0e577e】
+This project presents a comparative machine learning study for the early detection of liver disease using the Indian Liver Patient Dataset (ILPD). The objective is to evaluate multiple classification algorithms and identify the most effective model for supporting clinical screening through routine blood test results. The project implements a complete machine learning pipeline, including data preprocessing, feature scaling, class imbalance handling, model training, and performance evaluation. 
 
 ---
 
