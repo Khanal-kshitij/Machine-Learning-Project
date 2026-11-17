@@ -22,10 +22,7 @@ columns = [
     'Aspartate_Aminotransferase', 'Total_Protiens', 
     'Albumin', 'Albumin_and_Globulin_Ratio', 'Dataset'
 ]
-df = pd.read_csv(
-    r'C:\Users\KSHITIJ\Downloads\ilpd+indian+liver+patient+dataset\Indian Liver Patient Dataset (ILPD).csv', 
-    names=columns
-)
+df = pd.read_csv('Indian Liver Patient Dataset (ILPD).csv')
 
 # Map target label: UCI dataset uses 1 (Patient) and 2 (Non-Patient). Map to 1 and 0.
 df['Dataset'] = df['Dataset'].map({1: 1, 2: 0})
