@@ -30,10 +30,9 @@ columns = [
 ]
 
 df = pd.read_csv(
-    r'C:\Users\KSHITIJ\Downloads\ilpd+indian+liver+patient+dataset\Indian Liver Patient Dataset (ILPD).csv',
+    'Indian Liver Patient Dataset (ILPD).csv',
     names=columns
 )
-
 # Target mapping: 1 -> Patient (Positive class), 2 -> Healthy (Negative class)
 df['Target_Label'] = df['Target'].map({1: 'Liver Disease (1)', 2: 'Healthy (2)'})
 df['Target'] = df['Target'].map({1: 1, 2: 0})
