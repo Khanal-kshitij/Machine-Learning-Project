@@ -22,7 +22,10 @@ columns = [
     'Aspartate_Aminotransferase', 'Total_Protiens', 
     'Albumin', 'Albumin_and_Globulin_Ratio', 'Dataset'
 ]
-df = pd.read_csv('Indian Liver Patient Dataset (ILPD).csv')
+df = pd.read_csv(
+    'Indian Liver Patient Dataset (ILPD).csv',
+    names=columns
+)
 
 # Map target label: UCI dataset uses 1 (Patient) and 2 (Non-Patient). Map to 1 and 0.
 df['Dataset'] = df['Dataset'].map({1: 1, 2: 0})
@@ -34,13 +37,20 @@ X = df.drop(columns=['Dataset'])
 y = df['Dataset']
 
 # Handle missing values
-imputer = SimpleImputer(strategy='median')
-X_imputed = imputer.fit_transform(X)
+X = df.drop(columns=['Dataset'])
+y = df['Dataset']
 
-# Train/Test Split
 X_train, X_test, y_train, y_test = train_test_split(
-    X_imputed, y, test_size=0.2, random_state=42, stratify=y
+    X, y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
 )
+
+imputer = SimpleImputer(strategy='median')
+
+X_train = imputer.fit_transform(X_train)
+X_test = imputer.transform(X_test)
 
 # Feature Scaling
 scaler = StandardScaler()
