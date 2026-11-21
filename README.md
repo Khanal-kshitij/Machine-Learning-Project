@@ -1,6 +1,6 @@
 # Liver-Disease Screening from Routine Blood Tests (ILPD)
 
-**ML Application Assignment, Problem 7** · B.Sc. (H) Computer Science, Sem VI · Ramanujan College, University of Delhi
+**ML Application Assignment, Problem 7** · B.Sc. (H) Computer Science, Sem V · Ramanujan College, University of Delhi
 **Author:** Kshitij Khanal (Roll No. 24020570048) · **Article type:** Comparative Study
 
 A comparison of five classical classifiers and three class-imbalance strategies for screening
