@@ -1,0 +1,4 @@
+Baseline,cv_recall,cv_specificity,cv_precision,cv_f1,cv_bal_acc,cv_roc_auc,test_recall,test_specificity,test_precision,test_f1,test_roc_auc
+Majority class (always 'patient'),1.0,0.0,0.715,0.834,0.5,0.5,1.0,0.0,0.709,0.83,0.5
+Stratified random guess,0.713,0.275,0.711,0.712,0.494,0.494,0.759,0.382,0.75,0.754,0.571
+Single feature: log Total Bilirubin (LogReg),0.485,0.82,0.871,0.62,0.652,0.683,0.518,0.912,0.935,0.667,0.742
